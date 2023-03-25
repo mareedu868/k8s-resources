@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+matadata: 
+ name: label-pod
+ labels:
+  course: devops
+  duration: 45hr
+ annotations:
+  org.docker.kubernetes.image.maintainer: Srini
+
+spec:
+  containers:
+   - name: nginx
+     image: nginx
